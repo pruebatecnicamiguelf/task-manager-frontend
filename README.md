@@ -1,27 +1,41 @@
-# TaskManager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+### Frontend: `README.md`
 
-## Development server
+```markdown
+# Task Manager Frontend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este directorio contiene el frontend de la aplicación Task Manager, desarrollado con Angular.
 
-## Code scaffolding
+## Requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Node.js](https://nodejs.org/) 16 o superior
+- [npm](https://www.npmjs.com/) 7 o superior
+- [Angular CLI](https://angular.io/cli) 16.0.0
 
-## Build
+## Configuración
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clonar el repositorio**
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/pruebatecnicamiguelf/task-manager-backend.git
+   cd task-manager/frontend
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Instalar dependencias**
+   ```bash
+   npm install
 
-## Running end-to-end tests
+3. **Ejecutar el frontend**
+   ```bash
+   ng serve
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Notas
+   - **JWT:** Asegúrate de que el token JWT esté almacenado en el localStorage y se incluya en las solicitudes HTTP para autenticación.
+   - **CORS:** El backend debe permitir el CORS desde http://localhost:4200.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Consejos
+
+- **Revisar los Enlaces:** Asegúrate de que los enlaces a tu repositorio sean correctos.
+- **Formato:** Mantén el formato limpio y organizado para facilitar la lectura.
+- **Personalizar Instrucciones:** Si hay instrucciones específicas para tu proyecto, asegúrate de incluirlas.
+
