@@ -35,9 +35,4 @@ Este directorio contiene el frontend de la aplicación Task Manager, desarrollad
 
 - **JWT:** Asegúrate de que el token JWT esté almacenado en el localStorage y se incluya en las solicitudes HTTP para autenticación.
 - **CORS:** El backend debe permitir el CORS desde http://localhost:4200.
-
-### Consejos
-
-- **Revisar los Enlaces:** Asegúrate de que los enlaces a tu repositorio sean correctos.
-- **Formato:** Mantén el formato limpio y organizado para facilitar la lectura.
 ````
