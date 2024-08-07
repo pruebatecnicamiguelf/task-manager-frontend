@@ -40,5 +40,4 @@ Este directorio contiene el frontend de la aplicación Task Manager, desarrollad
 
 - **Revisar los Enlaces:** Asegúrate de que los enlaces a tu repositorio sean correctos.
 - **Formato:** Mantén el formato limpio y organizado para facilitar la lectura.
-- **Personalizar Instrucciones:** Si hay instrucciones específicas para tu proyecto, asegúrate de incluirlas.
 ````
