@@ -17,8 +17,8 @@ Este directorio contiene el frontend de la aplicación Task Manager, desarrollad
 1. **Clonar el repositorio**
 
    ```bash
-   git clone https://github.com/pruebatecnicamiguelf/task-manager-backend.git
-   cd task-manager/frontend
+   git clone https://github.com/pruebatecnicamiguelf/task-manager-frontend.git
+   cd task-manager-frontend
 
 2. **Instalar dependencias**
    ```bash
