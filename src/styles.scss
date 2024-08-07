@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.snackbar-success {
+  background-color: #3f51b5; // Indigo
+  color: #ffffff;
+}
+
+.snackbar-error {
+  background-color: #e91e63; // Pink (o un rojo más intenso si prefieres)
+  color: #ffffff;
+}
+
+.snackbar-info {
+  background-color: #2196f3; // Azul, que complementa bien el indigo
+  color: #ffffff;
+}
+
+.snackbar-warn {
+  background-color: #ffc107; // Ámbar o un tono que contraste bien
+  color: #ffffff;
+}

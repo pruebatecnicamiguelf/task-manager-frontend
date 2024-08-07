@@ -1,0 +1,61 @@
+<mat-toolbar color="primary">
+  <span>Dashboard</span>
+  <span class="spacer"></span>
+  <button mat-button (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<div class="dashboard-content">
+  <button
+    mat-fab
+    color="primary"
+    class="add-task-button"
+    (click)="openCreateTaskDialog()"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+
+  <mat-card class="task-list-card">
+    <mat-card-title>Tasks</mat-card-title>
+    <br />
+    <mat-card-content class="scrollable-content">
+      <!-- Mostrar mensaje cuando no hay tareas -->
+      <div *ngIf="tasks.length === 0" class="no-tasks-message">
+        No tasks available. Click the '+' button to add a new task.
+      </div>
+      
+      <!-- Mostrar las tareas cuando hay -->
+      <mat-accordion *ngIf="tasks.length > 0">
+        <mat-expansion-panel *ngFor="let task of tasks">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ task.title }}
+            </mat-panel-title>
+            <mat-panel-description>
+              {{ task.status }}
+              <mat-icon
+                [ngClass]="task.status === 'PENDING' ? 'pending-icon' : 'completed-icon'"
+              >
+                {{ task.status === 'PENDING' ? 'schedule' : 'done' }}
+              </mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>{{ task.description }}</p>
+          <mat-action-row class="action-row">
+            <button mat-button color="primary" (click)="toggleTaskStatus(task)">
+              <mat-icon>{{
+                task.status === 'PENDING' ? 'check_circle' : 'schedule'
+              }}</mat-icon>
+              {{ task.status === 'PENDING' ? 'Mark as Completed' : 'Mark as Pending' }}
+            </button>
+            <button mat-button color="accent" (click)="editTask(task)">
+              <mat-icon>edit</mat-icon> Edit
+            </button>
+            <button mat-button color="warn" (click)="deleteTask(task)">
+              <mat-icon>delete</mat-icon> Delete
+            </button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
+</div>
