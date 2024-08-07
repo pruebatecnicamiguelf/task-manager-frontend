@@ -1,6 +1,5 @@
 ### Frontend: `README.md`
 
-````markdown
 # Task Manager Frontend
 
 Este directorio contiene el frontend de la aplicación Task Manager, desarrollado con Angular.
@@ -18,7 +17,6 @@ Este directorio contiene el frontend de la aplicación Task Manager, desarrollad
    ```bash
    git clone https://github.com/pruebatecnicamiguelf/task-manager-frontend.git
    cd task-manager-frontend
-
    ```
 
 2. **Instalar dependencias**
